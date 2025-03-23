@@ -1,0 +1,63 @@
+close all;
+% subplot(2,1,1);
+% plot(c);
+% hold on;
+% axis manual;
+c=[a;b];
+plot(abs(fft(c,512)));
+% c=[a;b(50:end)];
+% c=[c;
+%     signed(hex2dec('1729')),
+% signed(hex2dec('1941')),
+% signed(hex2dec('1B3F')),
+% signed(hex2dec('1D22')),
+% signed(hex2dec('1EE7')),
+% signed(hex2dec('208D')),
+% signed(hex2dec('2213')),
+% signed(hex2dec('2376')),
+% signed(hex2dec('24B6')),
+% signed(hex2dec('25D1')),
+% signed(hex2dec('26C6')),
+% signed(hex2dec('2794')),
+% signed(hex2dec('2839')),
+% signed(hex2dec('28B6')),
+% signed(hex2dec('290A')),
+% signed(hex2dec('2934')),
+% signed(hex2dec('2933')),
+% signed(hex2dec('2909')),
+% signed(hex2dec('28B6')),
+% signed(hex2dec('2839')),
+% signed(hex2dec('2794')),
+% signed(hex2dec('26C7')),
+% signed(hex2dec('25D2')),
+% signed(hex2dec('24B8')),
+% signed(hex2dec('2379')),
+% signed(hex2dec('2217')),
+% signed(hex2dec('2092')),
+% signed(hex2dec('1EEC')),
+% signed(hex2dec('1D27')),
+% signed(hex2dec('1B45')),
+% signed(hex2dec('1947')),
+% signed(hex2dec('172F')),
+% signed(hex2dec('14FF')),
+% signed(hex2dec('12BA')),
+% signed(hex2dec('1061')),
+% signed(hex2dec('0DF8')),
+% signed(hex2dec('0B81')),
+% signed(hex2dec('08FF')),
+% signed(hex2dec('0673')),
+% signed(hex2dec('03E1')),
+% signed(hex2dec('014C')),
+% signed(hex2dec('FEB5')),
+% signed(hex2dec('FC20')),
+% signed(hex2dec('F98F')),
+% signed(hex2dec('F705')),
+% signed(hex2dec('F483')),
+% signed(hex2dec('F20E')),
+% signed(hex2dec('EFA5')),
+% signed(hex2dec('ED4E'))];
+
+% Hc=hilbert(c,512);
+% Fc=angle(Hc);
+% subplot(2,1,2);
+% plot(diff(Fc));

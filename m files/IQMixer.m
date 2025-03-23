@@ -1,0 +1,23 @@
+close all;
+% clear all;
+clc;
+Fs=200e6;
+F=10e3;
+Fmod=1e6;
+t=0:1/Fs:(1/F - 1/Fs);
+ycos=cos(2*pi*F*t);
+ysin=sin(2*pi*F*t);
+ymod=cos(2*pi*Fmod*t);% Modulation 
+I=ycos.*ymod;
+Q=ysin.*ymod;
+% plot(I,'+');
+plot(I);
+title('I Samples');
+figure;
+% plot(Q,'-');
+plot(Q);
+title('Q Samples');
+figure;
+% plot(I+Q,'.');
+plot(I+Q);
+title('I&Q Samples');
